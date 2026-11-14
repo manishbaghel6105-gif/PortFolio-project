@@ -175,24 +175,61 @@ main {
 
 #intro {
     text-align: center;
+    overflow: hidden;
 }
 
 #intro h2 {
     text-align: left;
+    overflow: hidden;
 }
-
-
 
 #intro video {
     margin: 20px 0;
-    /* padding: 30px; */
     object-fit: cover;
     max-width: 100%;
     height: auto;
     border-radius: 40px;
     border: 3px solid #CBD5E1;
+    overflow: hidden;
 }
 
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    #intro {
+        padding: 0 15px;
+    }
+
+    #intro h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    #intro video {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 15px 0;
+        border-radius: 20px;
+        border: 2px solid #CBD5E1;
+        object-fit: contain;
+    }
+}
+
+/* Small Mobile */
+@media screen and (max-width: 480px) {
+    #intro {
+        padding: 0 10px;
+    }
+
+    #intro h2 {
+        font-size: 19px;
+    }
+
+    #intro video {
+        border-radius: 15px;
+        margin: 12px 0;
+    }
+}
 footer {
     margin: 50px auto;
     max-width: 900px;
